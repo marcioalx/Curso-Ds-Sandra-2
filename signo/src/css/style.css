@@ -1,0 +1,60 @@
+
+body {
+    font-family: Arial;
+    background-image: url(../assets/img/background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial;
+    
+}
+
+h1 {
+    text-align: center;
+    color: aliceblue;
+}
+
+form {
+    background-color: rgba(80, 80, 80, 70%);
+    padding: 15px;
+    width: 350px;
+    margin: 0 auto;
+}
+
+label {
+    display: inline-block;
+    width: 200px;
+}
+
+input {
+    width: 100px;
+    height: 20px;
+    border-radius: 50px;
+}
+
+.rst {
+    background-color: #060606;
+    color: rgb(241, 245, 245);
+}
+
+#imgSigno {
+    width: 60px;
+    height: 60px;
+}
+
+.bob {
+    position: fixed;
+    left: 15px;
+    bottom: 15px;
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+
+#sgimg{
+    box-shadow: 2px 2px 2px rgb(67, 67, 67);
+    margin-left: 60%;
+    width: 25%;
+    height: 25%;
+}

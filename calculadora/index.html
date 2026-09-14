@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="java.js"></script>
+
+    <title>Calculadora</title>
+</head>
+
+<body>
+
+    <form id="form1">
+
+        <fieldset>
+
+            <h1>Calculadora</h1>
+
+            <label for="n1">Informe o 1º número:</label>
+            <input type="number" id="n1" value="" step="any">
+
+            <label for="n2">Informe o 2º número:</label>
+            <input type="number" id="n2" value="" step="any">
+
+            <label for="opc">Operação:</label>
+
+            <select id="opc">
+                <option value="mais">+</option>
+                <option value="menos">−</option>
+                <option value="multiplicacao">×</option>
+                <option value="divisao">÷</option>
+            </select>
+
+            <div class="botoes">
+
+                <input
+                    type="button"
+                    value="Calcular"
+                    onclick="Calcula()"
+                >
+
+                <input
+                    type="reset"
+                    value="Resetar"
+                    onclick="document.getElementById('n1').focus()"
+                >
+
+            </div>
+
+            <label for="resultado">Resultado:</label>
+
+            <input
+                type="text"
+                id="resultado"
+                disabled
+            >
+
+        </fieldset>
+
+    </form>
+
+</body>
+</html>

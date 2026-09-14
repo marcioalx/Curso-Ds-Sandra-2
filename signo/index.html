@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <script src="./src/js/script.js"></script>
+    <title>O dia em que nasci</title>
+</head>
+<body>
+
+    <h1>O dia em que nasci</h1>
+
+    <form name="meuForm">
+        <label>Informe o dia em que nasceu:</label>
+        <input type="text" id="dia"><br><br>
+
+        <label>Informe o mês em que nasceu:</label>
+        <input type="text" id="mes"><br><br>
+
+        <label>Informe o ano em que nasceu:</label>
+        <input type="text" id="ano"><br><br>
+
+        <label>Seu mês de nascimento é:</label>
+        <input type="text" id="resMes" disabled><br><br>
+
+        <label>O dia da semana foi:</label>
+        <input type="text" id="resSemana" disabled><br><br>
+
+        <label>Sob o signo de:</label><br>
+        <img name="signo" id="sgimg" src="../signo/src/assets/img/branco.jpg"><br><br>
+
+        <label>E a sua idade é:</label>
+        <input type="text" id="resIdade" disabled><br><br>
+
+        <input type="button" class="rst" value="Exibir" onclick="calcular()">
+        <input type="reset" class="rst" value="C" onclick="limpar()">
+    </form>
+
+    <img src="./src/assets/img/bob.gif" class="bob" alt="">
+    <img src="./src/assets/img/descobresigno.jpg" class="descobresigno" alt="">
+</body>
+</html>
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de 2º Grau</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <div class="calculadora">
+        <h1>Equação de 2º Grau</h1>
+
+        <p>Digite os valores de A, B e C:</p>
+
+        <input type="text" id="a" placeholder="Digite um valor:" inputmode="numeric">
+        <input type="text" id="b" placeholder="Digite outro valor:" inputmode="numeric">
+        <input type="text" id="c" placeholder="Digite outro valor:" inputmode="numeric">
+
+        <button onclick="calcular()">Calcular</button>
+        <button onclick="resetar()">Resetar</button>
+
+        
+
+        <div id="resultado">
+            <label for="resultado">Δ</label>
+            <input type="text" id="delta" disabled>
+
+            <label for="resultado">x₁</label>
+            <input type="text" id="r1" disabled>
+
+            <label for="resultado">x₂</label>
+            <input type="text" id="r2" disabled>
+        </div>
+    </div>
+
+</body>
+</html>
