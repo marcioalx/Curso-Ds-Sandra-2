@@ -7,11 +7,11 @@ function calcular() {
 
     if (isNaN(anoTxt) || anoTxt == "") {
         alert("O ano não pode ser vazio ou conter letras!");
-        return;
+        location.reload();
     }
     if (anoTxt.length != 4) {
         alert("Digite o ano com 4 dígitos!");
-        return;
+        location.reload();
     }
 
     var a_ani = parseInt(anoTxt);
@@ -19,24 +19,24 @@ function calcular() {
 
     if (a_ani > hoje.getFullYear()) {
         alert("O ano não pode ser no futuro!");
-        return;
+        location.reload();
     }
 
-    // 2. TRATAMENTO DE ERRO DO MÊS (1 a 12)
+    
     if (isNaN(mesTxt) || mesTxt == "") {
         alert("O mês não pode ser vazio!");
-        return;
+        location.reload();
     }
 
     var m_ani = parseInt(mesTxt);
     if (m_ani < 1 || m_ani > 12) {
         alert("O mês deve ser entre 1 e 12!");
-        return;
+        location.reload();
     }
 
     if (isNaN(diaTxt) || diaTxt == "") {
         alert("O dia não pode ser vazio!");
-        return;
+        location.reload();
     }
 
     var d_ani = parseInt(diaTxt);
@@ -48,24 +48,24 @@ function calcular() {
     if (m_ani == 2) {
         if (ehBissexto && (d_ani < 1 || d_ani > 29)) {
             alert("É ano bissexto! O dia para Fevereiro deve ser entre 1 e 29.");
-            return;
+            location.reload();
         } else if (!ehBissexto && (d_ani < 1 || d_ani > 28)) {
             alert("Não é ano bissexto! O dia para Fevereiro deve ser entre 1 e 28.");
-            return;
+            location.reload();
         }
     } 
    
     else if (m_ani == 4 || m_ani == 6 || m_ani == 9 || m_ani == 11) {
         if (d_ani < 1 || d_ani > 30) {
             alert("Este mês possui apenas 30 dias!");
-            return;
+            location.reload();
         }
     } 
 
     else {
         if (d_ani < 1 || d_ani > 31) {
             alert("Este mês possui no máximo 31 dias!");
-            return;
+            location.reload();
         }
     }
 
@@ -90,7 +90,7 @@ function calcular() {
 
     document.getElementById("resMes").value = nomeMes;
 
-    // Nome do Dia da Semana
+    
     var numSemana = dataNasc.getDay();
     var nomeSemana = "";
     if (numSemana == 0) nomeSemana = "um domingo";
@@ -103,7 +103,7 @@ function calcular() {
 
     document.getElementById("resSemana").value = nomeSemana;
 
-    // Cálculo exato da Idade
+   
     var idade = hoje.getFullYear() - a_ani;
     var mesAtual = hoje.getMonth() + 1;
     var diaAtual = hoje.getDate();
@@ -153,6 +153,6 @@ function calcular() {
 }
 
 function limpar() {
-    document.images["signo"].src = "";
+    document.images["signo"].src = "../signo/src/assets/img/branco.jpg";
     document.getElementById("dia").focus();
 }
